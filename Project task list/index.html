@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/7506b80ee4.js" crossorigin="anonymous"></script>
+    <title>Список завдань від Kyko</title>
+</head>
+<body class="pink lighten-4">
+    <div class="container cyan lighten-1">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card lighten-3">
+                    <div class="card-content">
+                        <span class="card-title center-align cyan darken-1">Список завдань</span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">Нове завдання</label>
+                                </div>
+                                <input type="submit" value="Добавити завдання" class="btn-large cyan darken-1">
+                            </form>
+                        </div>
+                        <div class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 class="task-title cyan darken-1 center-align">Завдання</h5>
+                        <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Фільтрування завдань</label>
+                        </div>
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-tasks btn-large cyan darken-1"><i class="material-icons left">delete</i>Очистити завдання</a>
+                        <!-- <a href="#" class="clear-tasks btn black">Очистити завдання</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
